@@ -1,496 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Contact Us | Modern Studio</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-<link rel="icon" href="favicon.ico">
-<style>
-
-:root{
---bg:#ffffff;
---text:#111111;
---card:#ffffff;
---section:#f8f9fa;
-}
-
-.dark-mode{
---bg:#111111;
---text:#ffffff;
---card:#1d1d1d;
---section:#161616;
-}
-
-body{
-font-family:'Inter',sans-serif;
-background:var(--bg);
-color:var(--text);
-transition:.4s;
-}
-
-h1,h2,h3,h4,h5{
-font-family:'Playfair Display',serif;
-}
-
-.navbar{
-background:#111;
-}
-
-.page-header{
-padding:170px 0 100px;
-background:#111;
-color:white;
-text-align:center;
-}
-
-.section{
-padding:100px 0;
-}
-
-.contact-card{
-background:var(--card);
-padding:35px;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-height:100%;
-}
-
-.form-control{
-padding:14px;
-}
-
-.map-container{
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-
-.social-links a{
-display:inline-block;
-margin-right:15px;
-text-decoration:none;
-font-weight:600;
-}
-
-.accordion-button:not(.collapsed){
-background:#111;
-color:#fff;
-}
-
-.footer{
-background:#111;
-color:white;
-padding:60px 0;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-
-<div class="container">
-
-<a class="navbar-brand fw-bold"
-href="index.html">
-
-MODERN
-
-</a>
-
-<button
-class="navbar-toggler"
-data-bs-toggle="collapse"
-data-bs-target="#menu">
-
-<span class="navbar-toggler-icon"></span>
-
-</button>
-
-<div class="collapse navbar-collapse"
-id="menu">
-
-<ul class="navbar-nav ms-auto">
-
-<li class="nav-item">
-<a class="nav-link" href="index.html">Home</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="about.html">About</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="projects.html">Projects</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="services.html">Services</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="blog.html">Blog</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link active" href="contact.html">Contact</a>
-</li>
-
-<li class="nav-item ms-2">
-
-<button
-id="themeToggle"
-class="btn btn-outline-light">
-
-🌙
-
-</button>
-
-</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</nav>
-
-<section class="page-header">
-
-<div class="container">
-
-<h1 class="display-3">
-Contact Us
-</h1>
-
-<p class="lead">
-Let's discuss your next architecture or design project.
-</p>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="container">
-
-<div class="row g-5">
-
-<div class="col-lg-7">
-
-<div class="contact-card" data-aos="fade-right">
-
-<h2 class="mb-4">
-Send a Message
-</h2>
-
-<!-- Replace YOUR_FORM_ID with Formspree ID -->
-<form action="https://formspree.io/f/YOUR_FORM_ID"
-method="POST">
-
-<div class="row">
-
-<div class="col-md-6 mb-3">
-
-<input
-type="text"
-name="name"
-class="form-control"
-placeholder="Your Name"
-required>
-
-</div>
-
-<div class="col-md-6 mb-3">
-
-<input
-type="email"
-name="email"
-class="form-control"
-placeholder="Your Email"
-required>
-
-</div>
-
-</div>
-
-<div class="mb-3">
-
-<input
-type="text"
-name="subject"
-class="form-control"
-placeholder="Subject">
-
-</div>
-
-<div class="mb-3">
-
-<textarea
-name="message"
-rows="6"
-class="form-control"
-placeholder="Your Message"
-required></textarea>
-
-</div>
-
-<button
-type="submit"
-class="btn btn-dark btn-lg">
-
-Send Message
-
-</button>
-
-</form>
-
-</div>
-
-</div>
-
-<div class="col-lg-5">
-
-<div class="contact-card mb-4"
-data-aos="fade-left">
-
-<h3>
-Office Information
-</h3>
-
-<hr>
-
-<p>
-<strong>Address</strong><br>
-123 Design Avenue<br>
-New York, NY 10001
-</p>
-
-<p>
-<strong>Email</strong><br>
-hello@modernstudio.com
-</p>
-
-<p>
-<strong>Phone</strong><br>
-+1 (555) 123-4567
-</p>
-
-</div>
-
-<div class="contact-card"
-data-aos="fade-left">
-
-<h3>
-Business Hours
-</h3>
-
-<hr>
-
-<p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-<p>Saturday: 10:00 AM - 4:00 PM</p>
-<p>Sunday: Closed</p>
-
-<div class="social-links mt-4">
-
-<a href="#">Instagram</a>
-<a href="#">LinkedIn</a>
-<a href="#">Facebook</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="pb-5">
-
-<div class="container">
-
-<h2 class="text-center mb-5">
-Find Us
-</h2>
-
-<div class="map-container">
-
-<iframe
-src="https://maps.google.com/maps?q=new%20york&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%"
-height="450"
-style="border:0;"
-allowfullscreen=""
-loading="lazy">
-
-</iframe>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="pb-5">
-
-<div class="container">
-
-<h2 class="text-center mb-5">
-Frequently Asked Questions
-</h2>
-
-<div class="accordion" id="faq">
-
-<div class="accordion-item">
-
-<h2 class="accordion-header">
-
-<button
-class="accordion-button"
-data-bs-toggle="collapse"
-data-bs-target="#faq1">
-
-How do I start a project?
-
-</button>
-
-</h2>
-
-<div
-id="faq1"
-class="accordion-collapse collapse show"
-data-bs-parent="#faq">
-
-<div class="accordion-body">
-
-Simply submit the contact form and our team will schedule an initial consultation.
-
-</div>
-
-</div>
-
-</div>
-
-<div class="accordion-item">
-
-<h2 class="accordion-header">
-
-<button
-class="accordion-button collapsed"
-data-bs-toggle="collapse"
-data-bs-target="#faq2">
-
-Do you work internationally?
-
-</button>
-
-</h2>
-
-<div
-id="faq2"
-class="accordion-collapse collapse"
-data-bs-parent="#faq">
-
-<div class="accordion-body">
-
-Yes, we collaborate with clients and consultants around the world.
-
-</div>
-
-</div>
-
-</div>
-
-<div class="accordion-item">
-
-<h2 class="accordion-header">
-
-<button
-class="accordion-button collapsed"
-data-bs-toggle="collapse"
-data-bs-target="#faq3">
-
-Can you provide construction management?
-
-</button>
-
-</h2>
-
-<div
-id="faq3"
-class="accordion-collapse collapse"
-data-bs-parent="#faq">
-
-<div class="accordion-body">
-
-Yes, we offer project oversight and construction coordination services.
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<footer class="footer">
-
-<div class="container text-center">
-
-<h4>Modern Studio</h4>
-
-<p>
-Architecture • Interiors • Urban Design
-</p>
-
-<p>
-© 2026 Modern Studio
-</p>
-
-</div>
-
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<script>
-
-AOS.init({
-duration:1200,
-once:true
-});
-
-document
-.getElementById('themeToggle')
-.addEventListener('click',()=>{
-
-document.body.classList.toggle('dark-mode');
-
-});
-
-</script>
-
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Contact Us | Modern Studio</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+      <link rel="icon" href="favicon.ico">
+      <style>
+         :root{
+         --bg:#ffffff;
+         --text:#111111;
+         --card:#ffffff;
+         --section:#f8f9fa;
+         }
+         .dark-mode{
+         --bg:#111111;
+         --text:#ffffff;
+         --card:#1d1d1d;
+         --section:#161616;
+         }
+         body{
+         font-family:'Inter',sans-serif;
+         background:var(--bg);
+         color:var(--text);
+         transition:.4s;
+         }
+         h1,h2,h3,h4,h5{
+         font-family:'Playfair Display',serif;
+         }
+         .navbar{
+         background:#111;
+         }
+         .page-header{
+         padding:170px 0 100px;
+         background:#111;
+         color:white;
+         text-align:center;
+         }
+         .section{
+         padding:100px 0;
+         }
+         .contact-card{
+         background:var(--card);
+         padding:35px;
+         border-radius:12px;
+         box-shadow:0 10px 30px rgba(0,0,0,.08);
+         height:100%;
+         }
+         .form-control{
+         padding:14px;
+         }
+         .map-container{
+         border-radius:12px;
+         overflow:hidden;
+         box-shadow:0 10px 30px rgba(0,0,0,.08);
+         }
+         .social-links a{
+         display:inline-block;
+         margin-right:15px;
+         text-decoration:none;
+         font-weight:600;
+         }
+         .accordion-button:not(.collapsed){
+         background:#111;
+         color:#fff;
+         }
+         .footer{
+         background:#111;
+         color:white;
+         padding:60px 0;
+         }
+      </style>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+         <div class="container">
+            <a class="navbar-brand fw-bold"
+               href="index.html">
+            MODERN
+            </a>
+            <button
+               class="navbar-toggler"
+               data-bs-toggle="collapse"
+               data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"
+               id="menu">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="projects.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item ms-2">
+                     <button
+                        id="themeToggle"
+                        class="btn btn-outline-light">
+                     🌙
+                     </button>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <section class="page-header">
+         <div class="container">
+            <h1 class="display-3">
+               Contact Us
+            </h1>
+            <p class="lead">
+               Let's discuss your next architecture or design project.
+            </p>
+         </div>
+      </section>
+      <section class="section">
+         <div class="container">
+            <div class="row g-5">
+               <div class="col-lg-7">
+                  <div class="contact-card" data-aos="fade-right">
+                     <h2 class="mb-4">
+                        Send a Message
+                     </h2>
+                     <!-- Replace YOUR_FORM_ID with Formspree ID -->
+                     <form action="https://formspree.io/f/YOUR_FORM_ID"
+                        method="POST">
+                        <div class="row">
+                           <div class="col-md-6 mb-3">
+                              <input
+                                 type="text"
+                                 name="name"
+                                 class="form-control"
+                                 placeholder="Your Name"
+                                 required>
+                           </div>
+                           <div class="col-md-6 mb-3">
+                              <input
+                                 type="email"
+                                 name="email"
+                                 class="form-control"
+                                 placeholder="Your Email"
+                                 required>
+                           </div>
+                        </div>
+                        <div class="mb-3">
+                           <input
+                              type="text"
+                              name="subject"
+                              class="form-control"
+                              placeholder="Subject">
+                        </div>
+                        <div class="mb-3">
+                           <textarea
+                              name="message"
+                              rows="6"
+                              class="form-control"
+                              placeholder="Your Message"
+                              required></textarea>
+                        </div>
+                        <button
+                           type="submit"
+                           class="btn btn-dark btn-lg">
+                        Send Message
+                        </button>
+                     </form>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                  <div class="contact-card mb-4"
+                     data-aos="fade-left">
+                     <h3>
+                        Office Information
+                     </h3>
+                     <hr>
+                     <p>
+                        <strong>Address</strong><br>
+                        123 Design Avenue<br>
+                        New York, NY 10001
+                     </p>
+                     <p>
+                        <strong>Email</strong><br>
+                        hello@modernstudio.com
+                     </p>
+                     <p>
+                        <strong>Phone</strong><br>
+                        +1 (555) 123-4567
+                     </p>
+                  </div>
+                  <div class="contact-card"
+                     data-aos="fade-left">
+                     <h3>
+                        Business Hours
+                     </h3>
+                     <hr>
+                     <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                     <p>Saturday: 10:00 AM - 4:00 PM</p>
+                     <p>Sunday: Closed</p>
+                     <div class="social-links mt-4">
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Facebook</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="pb-5">
+         <div class="container">
+            <h2 class="text-center mb-5">
+               Find Us
+            </h2>
+            <div class="map-container">
+               <iframe
+                  src="https://maps.google.com/maps?q=new%20york&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  width="100%"
+                  height="450"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy">
+               </iframe>
+            </div>
+         </div>
+      </section>
+      <section class="pb-5">
+         <div class="container">
+            <h2 class="text-center mb-5">
+               Frequently Asked Questions
+            </h2>
+            <div class="accordion" id="faq">
+               <div class="accordion-item">
+                  <h2 class="accordion-header">
+                     <button
+                        class="accordion-button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq1">
+                     How do I start a project?
+                     </button>
+                  </h2>
+                  <div
+                     id="faq1"
+                     class="accordion-collapse collapse show"
+                     data-bs-parent="#faq">
+                     <div class="accordion-body">
+                        Simply submit the contact form and our team will schedule an initial consultation.
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item">
+                  <h2 class="accordion-header">
+                     <button
+                        class="accordion-button collapsed"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq2">
+                     Do you work internationally?
+                     </button>
+                  </h2>
+                  <div
+                     id="faq2"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#faq">
+                     <div class="accordion-body">
+                        Yes, we collaborate with clients and consultants around the world.
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item">
+                  <h2 class="accordion-header">
+                     <button
+                        class="accordion-button collapsed"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq3">
+                     Can you provide construction management?
+                     </button>
+                  </h2>
+                  <div
+                     id="faq3"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#faq">
+                     <div class="accordion-body">
+                        Yes, we offer project oversight and construction coordination services.
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div class="container text-center">
+            <h4>Modern Studio</h4>
+            <p>
+               Architecture • Interiors • Urban Design
+            </p>
+            <p>
+               &copy; 2026 Modern Studio. All Rights Reserved.
+            </p>
+            <p class="mt-3">
+               <a href="privacy.html" class="text-white text-decoration-none">
+               Privacy Policy
+               </a>
+               |
+               <a href="terms.html" class="text-white text-decoration-none">
+               Terms of Use
+               </a>
+               |
+               <a href="contact.html" class="text-white text-decoration-none">
+               Contact
+               </a>
+            </p>
+         </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+      <script>
+         AOS.init({
+         duration:1200,
+         once:true
+         });
+         
+         document
+         .getElementById('themeToggle')
+         .addEventListener('click',()=>{
+         
+         document.body.classList.toggle('dark-mode');
+         
+         });
+         
+      </script>
+   </body>
 </html>
