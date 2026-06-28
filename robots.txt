@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dahiya301.github.io/modern-studio/sitemap.xml
