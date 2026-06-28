@@ -34,4 +34,16 @@
     <loc>https://dahiya301.github.io/modern-studio/contact.html</loc>
   </url>
 
+  <url>
+      <loc>https://dahiya301.github.io/modern-studio/privacy.html</loc>
+      <changefreq>yearly</changefreq>
+      <priority>0.3</priority>
+  </url>
+
+  <url>
+      <loc>https://dahiya301.github.io/modern-studio/terms.html</loc>
+      <changefreq>yearly</changefreq>
+      <priority>0.3</priority>
+  </url>
+  
 </urlset>
