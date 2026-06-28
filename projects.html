@@ -1,239 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Projects | VANSM INFRA PRIVATE LIMITED</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-      <link rel="stylesheet" href="assets/css/style.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-<meta name="theme-color" content="#111111">
-      <style>
-         body{
-         font-family:'Inter',sans-serif;
-         background:var(--bg);
-         color:var(--text);
-         transition:.4s;
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Projects | VANSM INFRA PRIVATE LIMITED</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet">
+   <meta name="theme-color" content="#111111">
+   <style>
+      body {
+         font-family: 'Inter', sans-serif;
+         background: var(--bg);
+         color: var(--text);
+         transition: .4s;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+         font-family: 'Playfair Display', serif;
+      }
+
+      .navbar {
+         background: var(--navbar-bg);
+      }
+
+      .page-header {
+         padding: 150px 0 80px;
+         background: var(--navbar-bg);
+         color: var(--white);
+         text-align: center;
+      }
+
+      .filter-btn {
+         margin: 5px;
+      }
+
+      .portfolio {
+         column-count: 3;
+         column-gap: 20px
+      }
+
+      .portfolio-item {
+         break-inside: avoid;
+         margin-bottom: 20px;
+         position: relative;
+         overflow: hidden;
+         border-radius: 12px;
+         cursor: pointer
+      }
+
+      .portfolio-item img {
+         width: 100%;
+         display: block;
+         transition: .8s
+      }
+
+      .portfolio-item:hover img {
+         transform: scale(1.08)
+      }
+
+      .overlay {
+         position: absolute;
+         inset: 0;
+         background: var(--overlay);
+         opacity: 0;
+         transition: .4s;
+         display: flex;
+         align-items: center;
+         justify-content: center
+      }
+
+      .portfolio-item:hover .overlay {
+         opacity: 1
+      }
+
+      .overlay-content {
+         color: var(--white);
+         text-align: center
+      }
+
+      .footer {
+         background: var(--navbar-bg);
+         color: var(--white);
+         padding: 60px 0;
+         margin-top: 100px
+      }
+
+      @media(max-width:991px) {
+         .portfolio {
+            column-count: 2
          }
-         h1,h2,h3,h4,h5{
-         font-family:'Playfair Display',serif;
+      }
+
+      @media(max-width:768px) {
+         .portfolio {
+            column-count: 1
          }
-         .navbar{
-            background:var(--navbar-bg);
-         }
-         .page-header{
-         padding:150px 0 80px;
-         background:var(--navbar-bg);
-         color:var(--white);
-         text-align:center;
-         }
-         .filter-btn{margin:5px;}
-         .portfolio{column-count:3;column-gap:20px}
-         .portfolio-item{break-inside:avoid;margin-bottom:20px;position:relative;overflow:hidden;border-radius:12px;cursor:pointer}
-         .portfolio-item img{width:100%;display:block;transition:.8s}
-         .portfolio-item:hover img{transform:scale(1.08)}
-         .overlay{position:absolute;inset:0;background:var(--overlay);opacity:0;transition:.4s;display:flex;align-items:center;justify-content:center}
-         .portfolio-item:hover .overlay{opacity:1}
-         .overlay-content{color:var(--white);text-align:center}
-         .footer{background:var(--navbar-bg);color:var(--white);padding:60px 0;margin-top:100px}
-         @media(max-width:991px){.portfolio{column-count:2}}
-         @media(max-width:768px){.portfolio{column-count:1}}
-      </style>
-   </head>
-   <body>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
+      }
+   </style>
+</head>
 
-    <img src="assets/images/logo.png"
-         alt="Logo"
-         width="58"
-         class="me-3">
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+         <a class="navbar-brand d-flex align-items-center" href="index.html">
 
-    <div>
+            <img src="assets/images/logo.png" alt="Logo" width="58" class="me-3">
 
-        <div class="fw-bold"
-             style="font-size:20px;letter-spacing:1px;">
-            VANSM INFRA
-        </div>
+            <div>
 
-        <div style="font-size:11px;color:#b8860b;font-weight:600;">
-            PRIVATE LIMITED
-        </div>
+               <div class="fw-bold" style="font-size:20px;letter-spacing:1px;">
+                  VANSM INFRA
+               </div>
 
-    </div>
+               <div style="font-size:11px;color:#b8860b;font-weight:600;">
+                  PRIVATE LIMITED
+               </div>
 
-</a>
-            <button class="navbar-toggler"
-               data-bs-toggle="collapse"
-               data-bs-target="#menu">
+            </div>
+
+         </a>
+         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="menu">
-               <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                     <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link active" href="projects.html">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="services.html">Services</a>
-                  </li>
-                  <!--<li class="nav-item">
+         </button>
+         <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link active" href="projects.html">Projects</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+               </li>
+               <!--<li class="nav-item">
                      <a class="nav-link" href="blog.html">Blog</a>
                   </li>-->
-                  <li class="nav-item">
-                     <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item ms-2">
-                     <button
-                        id="themeToggle"
-                        class="btn btn-outline-light">
+               <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+               </li>
+               <li class="nav-item ms-2">
+                  <button id="themeToggle" class="btn btn-outline-light">
                      🌙
-                     </button>
-                  </li>
-               </ul>
-            </div>
+                  </button>
+               </li>
+            </ul>
          </div>
-      </nav>
-      <section class="page-header">
-         <div class="container">
-            <h1>Our Projects</h1>
-            <p class="lead">
-               Architecture, Interior Design & Urban Planning
-            </p>
-         </div>
-      </section>
-      <section class="py-5">
-         <div class="container text-center">
-            <button class="btn btn-dark filter-btn" onclick="filterSelection('all')">
+      </div>
+   </nav>
+   <section class="page-header">
+      <div class="container">
+         <h1>Our Projects</h1>
+         <p class="lead">
+            Architecture, Interior Design & Urban Planning
+         </p>
+      </div>
+   </section>
+   <section class="py-5">
+      <div class="container text-center">
+         <button class="btn btn-dark filter-btn" onclick="filterSelection('all')">
             All
-            </button>
-            <button class="btn btn-outline-dark filter-btn" onclick="filterSelection('residential')">
+         </button>
+         <button class="btn btn-outline-dark filter-btn" onclick="filterSelection('residential')">
             Residential
-            </button>
-            <button class="btn btn-outline-dark filter-btn" onclick="filterSelection('commercial')">
+         </button>
+         <button class="btn btn-outline-dark filter-btn" onclick="filterSelection('commercial')">
             Commercial
-            </button>
-            <button class="btn btn-outline-dark filter-btn" onclick="filterSelection('interior')">
+         </button>
+         <button class="btn btn-outline-dark filter-btn" onclick="filterSelection('interior')">
             Interior
-            </button>
+         </button>
+      </div>
+   </section>
+   <section>
+      <div class="container">
+         <div class="portfolio">
+            <a href="project-residence.html" class="portfolio-item residential" data-aos="fade-up">
+               <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200">
+               <div class="overlay">
+                  <div class="overlay-content">
+                     <h4>Luxury Residence</h4>
+                     <p>Residential</p>
+                  </div>
+               </div>
+            </a>
+            <a href="project-villa.html" class="portfolio-item residential" data-aos="fade-up">
+               <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200">
+               <div class="overlay">
+                  <div class="overlay-content">
+                     <h4>Urban Villa</h4>
+                     <p>Residential</p>
+                  </div>
+               </div>
+            </a>
+            <a href="project-office.html" class="portfolio-item commercial" data-aos="fade-up">
+               <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200">
+               <div class="overlay">
+                  <div class="overlay-content">
+                     <h4>Corporate Office</h4>
+                     <p>Commercial</p>
+                  </div>
+               </div>
+            </a>
+            <a href="project-interior.html" class="portfolio-item interior" data-aos="fade-up">
+               <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200">
+               <div class="overlay">
+                  <div class="overlay-content">
+                     <h4>Luxury Interior</h4>
+                     <p>Interior</p>
+                  </div>
+               </div>
+            </a>
+            <a href="project-hotel.html" class="portfolio-item commercial" data-aos="fade-up">
+               <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=1200">
+               <div class="overlay">
+                  <div class="overlay-content">
+                     <h4>Modern Hotel</h4>
+                     <p>Commercial</p>
+                  </div>
+               </div>
+            </a>
+            <a href="project-apartment.html" class="portfolio-item residential" data-aos="fade-up">
+               <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200">
+               <div class="overlay">
+                  <div class="overlay-content">
+                     <h4>Minimal Apartment</h4>
+                     <p>Residential</p>
+                  </div>
+               </div>
+            </a>
          </div>
-      </section>
-      <section>
-         <div class="container">
-            <div class="portfolio">
-               <a href="project-residence.html"
-                  class="portfolio-item residential"
-                  data-aos="fade-up">
-                  <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200">
-                  <div class="overlay">
-                     <div class="overlay-content">
-                        <h4>Luxury Residence</h4>
-                        <p>Residential</p>
-                     </div>
-                  </div>
-               </a>
-               <a href="project-villa.html"
-                  class="portfolio-item residential"
-                  data-aos="fade-up">
-                  <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200">
-                  <div class="overlay">
-                     <div class="overlay-content">
-                        <h4>Urban Villa</h4>
-                        <p>Residential</p>
-                     </div>
-                  </div>
-               </a>
-               <a href="project-office.html"
-                  class="portfolio-item commercial"
-                  data-aos="fade-up">
-                  <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200">
-                  <div class="overlay">
-                     <div class="overlay-content">
-                        <h4>Corporate Office</h4>
-                        <p>Commercial</p>
-                     </div>
-                  </div>
-               </a>
-               <a href="project-interior.html"
-                  class="portfolio-item interior"
-                  data-aos="fade-up">
-                  <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200">
-                  <div class="overlay">
-                     <div class="overlay-content">
-                        <h4>Luxury Interior</h4>
-                        <p>Interior</p>
-                     </div>
-                  </div>
-               </a>
-               <a href="project-hotel.html"
-                  class="portfolio-item commercial"
-                  data-aos="fade-up">
-                  <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=1200">
-                  <div class="overlay">
-                     <div class="overlay-content">
-                        <h4>Modern Hotel</h4>
-                        <p>Commercial</p>
-                     </div>
-                  </div>
-               </a>
-               <a href="project-apartment.html"
-                  class="portfolio-item residential"
-                  data-aos="fade-up">
-                  <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200">
-                  <div class="overlay">
-                     <div class="overlay-content">
-                        <h4>Minimal Apartment</h4>
-                        <p>Residential</p>
-                     </div>
-                  </div>
-               </a>
-            </div>
-         </div>
-      </section>
-      <footer class="footer">
-         <div class="container text-center">
-            <h4>VANSM INFRA PRIVATE LIMITED</h4>
-            <p>
-               Architecture • Interiors • Urban Design
-            </p>
-            <p>
-               &copy; 2026 VANSM INFRA PRIVATE LIMITED. All Rights Reserved.
-            </p>
-            <p class="mt-3">
-               <a href="privacy.html" class="text-white text-decoration-none">
+      </div>
+   </section>
+   <footer class="footer">
+      <div class="container text-center">
+         <h4>VANSM INFRA PRIVATE LIMITED</h4>
+         <p>
+            Architecture • Interiors • Urban Design
+         </p>
+         <p>
+            &copy; 2026 VANSM INFRA PRIVATE LIMITED. All Rights Reserved.
+         </p>
+         <p class="mt-3">
+            <a href="privacy.html" class="text-white text-decoration-none">
                Privacy Policy
-               </a>
-               |
-               <a href="terms.html" class="text-white text-decoration-none">
+            </a>
+            |
+            <a href="terms.html" class="text-white text-decoration-none">
                Terms of Use
-               </a>
-               |
-               <a href="contact.html" class="text-white text-decoration-none">
+            </a>
+            |
+            <a href="contact.html" class="text-white text-decoration-none">
                Contact
-               </a>
-            </p>
-         </div>
-      </footer>
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-         <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-         <script src="assets/js/main.js"></script>
-         <script>
-             function filterSelection(category){
-                let items = document.querySelectorAll('.portfolio-item');
-                items.forEach(item=>{
-                   if(category==='all' || item.classList.contains(category)) item.style.display='block';
-                   else item.style.display='none';
-                });
-             }
-         </script>
-   </body>
+            </a>
+         </p>
+      </div>
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+   <script src="assets/js/main.js"></script>
+   <script>
+      function filterSelection(category) {
+         let items = document.querySelectorAll('.portfolio-item');
+         items.forEach(item => {
+            if (category === 'all' || item.classList.contains(category)) item.style.display = 'block';
+            else item.style.display = 'none';
+         });
+      }
+   </script>
+</body>
+
 </html>

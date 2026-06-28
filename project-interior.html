@@ -1,125 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Luxury Interior | VANSM INFRA PRIVATE LIMITED</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-      <link rel="stylesheet" href="assets/css/style.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-      <link rel="icon" href="favicon.ico">
-      <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
-      <link rel="icon" type="image/svg+xml" href="favicon.svg">
-      <link rel="shortcut icon" href="favicon.ico">
-      <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-      <meta name="apple-mobile-web-app-title" content="VANSM Infra">
-      <link rel="manifest" href="site.webmanifest">
-      <meta name="theme-color" content="#111111">
-      <style>
-         body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);transition:.4s}
-         h1,h2,h3,h4,h5{font-family:'Playfair Display',serif}
-         .navbar{background:var(--navbar-bg)}
-         .hero{height:75vh;background:url('https://images.unsplash.com/photo-1484154218962-a197022b5858?w=2200') center center/cover;position:relative;display:flex;align-items:center}
-         .hero::before{content:'';position:absolute;inset:0;background:var(--overlay)}
-         .hero-content{position:relative;z-index:2;color:var(--white)}
-         .section{padding:100px 0}
-         .info-card{background:var(--surface);padding:30px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
-         .gallery img{width:100%;border-radius:12px;transition:.6s}
-         .gallery img:hover{transform:scale(1.03)}
-         .related-card{overflow:hidden;border-radius:12px}
-         .related-card img{width:100%;transition:.8s}
-         .related-card:hover img{transform:scale(1.08)}
-         .footer{background:var(--navbar-bg);color:var(--white);padding:60px 0}
-      </style>
-   </head>
-   <body>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-         <div class="container">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luxury Interior | VANSM INFRA PRIVATE LIMITED</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="VANSM Infra">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#111111">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            transition: .4s
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Playfair Display', serif
+        }
+
+        .navbar {
+            background: var(--navbar-bg)
+        }
+
+        .hero {
+            height: 75vh;
+            background: url('https://images.unsplash.com/photo-1484154218962-a197022b5858?w=2200') center center/cover;
+            position: relative;
+            display: flex;
+            align-items: center
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--overlay)
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: var(--white)
+        }
+
+        .section {
+            padding: 100px 0
+        }
+
+        .info-card {
+            background: var(--surface);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .08)
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            transition: .6s
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03)
+        }
+
+        .related-card {
+            overflow: hidden;
+            border-radius: 12px
+        }
+
+        .related-card img {
+            width: 100%;
+            transition: .8s
+        }
+
+        .related-card:hover img {
+            transform: scale(1.08)
+        }
+
+        .footer {
+            background: var(--navbar-bg);
+            color: var(--white);
+            padding: 60px 0
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-               <img src="assets/images/logo.png" alt="Logo" width="58" class="me-3">
-               <div>
-                  <div class="fw-bold" style="font-size:20px;letter-spacing:1px;">VANSM INFRA</div>
-                  <div style="font-size:11px;color:#b8860b;font-weight:600;">PRIVATE LIMITED</div>
-               </div>
+                <img src="assets/images/logo.png" alt="Logo" width="58" class="me-3">
+                <div>
+                    <div class="fw-bold" style="font-size:20px;letter-spacing:1px;">VANSM INFRA</div>
+                    <div style="font-size:11px;color:#b8860b;font-weight:600;">PRIVATE LIMITED</div>
+                </div>
             </a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span
+                    class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="menu">
-               <ul class="navbar-nav ms-auto">
-                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                  <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-                  <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                  <li class="nav-item ms-2"><button id="themeToggle" class="btn btn-outline-light">🌙</button></li>
-               </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-2"><button id="themeToggle" class="btn btn-outline-light">🌙</button></li>
+                </ul>
             </div>
-         </div>
-      </nav>
-      <section class="hero">
-         <div class="container hero-content">
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="container hero-content">
             <h1 class="display-3">Luxury Interior</h1>
             <p class="lead">A refined residential interior project with layered materials and seamless flow.</p>
-         </div>
-      </section>
-      <section class="section">
-         <div class="container">
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
             <div class="row">
-               <div class="col-lg-8" data-aos="fade-right">
-                  <h2>Project Overview</h2>
-                  <p>This interior design project combines rich textures, custom joinery, and refined lighting to create a sophisticated home environment.</p>
-                  <p>The program includes living, dining, workspace, and private retreat areas, all arranged for comfort and everyday adaptability.</p>
-                  <p>The palette is warm and modern, with carefully curated materials that feel luxurious yet livable.</p>
-               </div>
-               <div class="col-lg-4" data-aos="fade-left">
-                  <div class="info-card">
-                     <h4 class="mb-4">Project Information</h4>
-                     <hr>
-                     <p><strong>Client:</strong><br>Private Residence</p>
-                     <p><strong>Location:</strong><br>Los Angeles, USA</p>
-                     <p><strong>Year:</strong><br>2026</p>
-                     <p><strong>Area:</strong><br>4,200 sq ft</p>
-                     <p><strong>Services:</strong><br>Interior Design<br>Furniture Planning<br>Styling</p>
-                  </div>
-               </div>
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h2>Project Overview</h2>
+                    <p>This interior design project combines rich textures, custom joinery, and refined lighting to
+                        create a sophisticated home environment.</p>
+                    <p>The program includes living, dining, workspace, and private retreat areas, all arranged for
+                        comfort and everyday adaptability.</p>
+                    <p>The palette is warm and modern, with carefully curated materials that feel luxurious yet livable.
+                    </p>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="info-card">
+                        <h4 class="mb-4">Project Information</h4>
+                        <hr>
+                        <p><strong>Client:</strong><br>Private Residence</p>
+                        <p><strong>Location:</strong><br>Los Angeles, USA</p>
+                        <p><strong>Year:</strong><br>2026</p>
+                        <p><strong>Area:</strong><br>4,200 sq ft</p>
+                        <p><strong>Services:</strong><br>Interior Design<br>Furniture Planning<br>Styling</p>
+                    </div>
+                </div>
             </div>
-         </div>
-      </section>
-      <section class="section" style="background:var(--section);">
-         <div class="container">
+        </div>
+    </section>
+    <section class="section" style="background:var(--section);">
+        <div class="container">
             <h2 class="text-center mb-5">Gallery</h2>
             <div class="row g-4 gallery">
-               <div class="col-md-6" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200"></div>
-               <div class="col-md-6" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200"></div>
-               <div class="col-md-6" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200"></div>
-               <div class="col-md-6" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=1200"></div>
+                <div class="col-md-6" data-aos="zoom-in"><img
+                        src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200"></div>
+                <div class="col-md-6" data-aos="zoom-in"><img
+                        src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200"></div>
+                <div class="col-md-6" data-aos="zoom-in"><img
+                        src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200"></div>
+                <div class="col-md-6" data-aos="zoom-in"><img
+                        src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=1200"></div>
             </div>
-         </div>
-      </section>
-      <section class="section">
-         <div class="container">
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
             <h2 class="text-center mb-5">Related Projects</h2>
             <div class="row g-4">
-               <div class="col-md-4"><a href="project-villa.html" class="text-decoration-none text-dark"><div class="related-card"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1000"></div><h5 class="mt-3">Urban Villa</h5></a></div>
-               <div class="col-md-4"><a href="project-office.html" class="text-decoration-none text-dark"><div class="related-card"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1000"></div><h5 class="mt-3">Corporate Office</h5></a></div>
-               <div class="col-md-4"><a href="projects.html" class="text-decoration-none text-dark"><div class="related-card"><img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=1000"></div><h5 class="mt-3">View All Projects</h5></a></div>
+                <div class="col-md-4"><a href="project-villa.html" class="text-decoration-none text-dark">
+                        <div class="related-card"><img
+                                src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1000"></div>
+                        <h5 class="mt-3">Urban Villa</h5>
+                    </a></div>
+                <div class="col-md-4"><a href="project-office.html" class="text-decoration-none text-dark">
+                        <div class="related-card"><img
+                                src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1000"></div>
+                        <h5 class="mt-3">Corporate Office</h5>
+                    </a></div>
+                <div class="col-md-4"><a href="projects.html" class="text-decoration-none text-dark">
+                        <div class="related-card"><img
+                                src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=1000"></div>
+                        <h5 class="mt-3">View All Projects</h5>
+                    </a></div>
             </div>
-         </div>
-      </section>
-      <footer class="footer">
-         <div class="container text-center">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container text-center">
             <h4>VANSM INFRA PRIVATE LIMITED</h4>
             <p>Architecture • Interiors • Urban Design</p>
             <p>&copy; 2026 VANSM INFRA PRIVATE LIMITED. All Rights Reserved.</p>
-            <p class="mt-3"><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a> | <a href="terms.html" class="text-white text-decoration-none">Terms of Use</a> | <a href="contact.html" class="text-white text-decoration-none">Contact</a></p>
-         </div>
-      </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-      <script src="assets/js/main.js"></script>
-   </body>
+            <p class="mt-3"><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a> | <a
+                    href="terms.html" class="text-white text-decoration-none">Terms of Use</a> | <a href="contact.html"
+                    class="text-white text-decoration-none">Contact</a></p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
